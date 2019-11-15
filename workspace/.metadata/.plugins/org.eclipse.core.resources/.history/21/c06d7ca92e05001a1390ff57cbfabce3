@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class demo1 {
+	public static void main(String[] args) {
+		
+		System.out.println("类的使用练习");
+		
+		ArrayList a1 = new ArrayList();
+		
+		
+	}
+}

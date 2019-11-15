@@ -1,0 +1,17 @@
+package com.sikiedu1;
+
+import java.math.BigDecimal;
+
+public class ScannerDemo1 {
+	public static void main(String[] args) {
+
+			
+		BigDecimal m1 = new BigDecimal("155");
+		System.out.println(m1);
+			
+		
+		
+		
+		
+	}
+}

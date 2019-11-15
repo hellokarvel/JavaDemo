@@ -1,0 +1,27 @@
+package com.sikiedu1;
+
+public class helloworld {
+	public static void main(String[] args) {
+		System.out.println("helloworld ÄãºÃ");
+
+		String s1 = "hellokarvel1";
+		int n1 = 0;
+		String s2 = new String("hellokarvel1");
+
+		System.out.println(n1);
+		System.out.println(s1 == s2);
+		System.out.println("address of s1 = " + s1.hashCode());
+		System.out.println("address of s2 = " + s2.hashCode());
+		System.out.println(s1.equals(s2));
+	}
+		
+}
+
+class test1 {
+	
+	public test1(int i, String str) {
+		
+	}
+	
+}
+
