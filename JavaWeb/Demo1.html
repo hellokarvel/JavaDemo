@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		 <title>我是标题</title>
+		 <!-- utf-8 gbk gb2312 -->
+	</head>
+	<body bgcolor ="112eff">
+		<!-- action 提交路径method 提交方法get方式不安全 post:需要加密的数据-->
+		<form action ="1.html" method = "post" name ="registerform" enctype = "multipart/form-data">
+		<table align = "center">
+			<tr><td>账号</td><td><input type = "text" name = "username" maxlength = "6"></td></tr>
+			<tr><td>密码</td><td><input type = "password" placeholder ="请输入密码" name = "password"></td></tr>
+			<tr><td>性别</td><td>男<input type ="radio" name = "sex" value = "man" checked ></td><td>女<input type ="radio"  name = "sex" value = "woman"></td></tr>
+<!-- 		"radio"用于单选框 同一name为单选框value是传递 -->
+
+			<tr><td>爱好</td>
+				<td>读书<input type ="checkbox" name="hobby" value="1"/>
+					游泳<input type ="checkbox" name="hobby" value="2"/>
+					游戏<input type ="checkbox" name="hobby" value="3"/>
+									<!-- checkbox是复选框 -->
+									
+			</tr>
+			<tr><td>生日<td><select name = "month" multiple>
+			<!-- multiple多选 size 一次显示多项配合使用 -->
+			<option>1月</option>
+			<option>2月</option>
+			<option>3月</option>
+			</select>
+			</tr>
+			<tr><td colspan = "2" align ="center"><input type="reset"/><input type ="submit"value ="注册"/></td>
+			
+			</tr>
+			<!-- 文本域 -->
+			<tr><td>交友宣言<td><textarea rows = "10" coals = "100" placeholder = "开始你的表演"></textarea>
+			<!-- rows输入行数 coals每行输入字符数 -->
+			</tr>
+		
+		</table>
+		</form>
+		
+	</body>
+
+
+</html>
+ <!-- 控制格式：<p> -->
