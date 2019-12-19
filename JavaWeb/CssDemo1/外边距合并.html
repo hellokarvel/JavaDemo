@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.father {
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				border: 1px solid red;   /* 方法1：解决外边距塌陷问题，给父亲盒子一个边线
+											方法2：overflow*/
+			}
+			.son {
+				width: 100px;
+				height: 100px;
+				background-color: #87CEEB;
+				margin: 30px 30px; /* 外边距塌陷问题 左右可以，上下不行 */
+			}	
+			</style>
+	</head>
+	<body>
+		<div class="father">
+			<div class="son"></div>
+		</div>
+	</body>
+</html>

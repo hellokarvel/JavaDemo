@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			ul {
+				list-style: none; /* 取消列表默认样式 */
+			}
+			.searchPic {
+				width: 238px;
+				height: 294px;
+				border: 1px solid #ccc;
+				border-top: 3px solid #FF8400;
+				margin: 50px;
+			}
+			.searchPic h3 {
+				height: 35px;
+				border-bottom: 1px solid #ccc;
+				font-size: 16px;
+				font-style: normal;
+				line-height: 35px;     /* 文字上下居中 */
+				/* margin-left: 10px;   向右走，会导致底边框右移 */
+				padding-left: 10px;		/* 内边距，字向右走，底边框不会移动
+											继承了父亲的宽度，不会撑开盒子*/
+			}
+			.searchPic img {
+				margin: 7px 0 0 8px;
+			}
+			.searchPic ul li a {
+				font-size: 14px;
+				color: #666;
+				text-decoration: none;
+				padding-left: 5px;
+				
+			}
+			.searchPic ul {
+				margin-left: 10px;
+				
+			}
+			.searchPic ul li {
+				padding-left: 10px;
+				height: 26px;
+				line-height: 26px;
+				background: url(block.jpg) no-repeat left center;
+				background-size: 5%;
+			}
+			.searchPic ul li a:hover {
+				text-decoration: underline;
+				color: #FF8400;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="searchPic">
+			<h3>搜索趣图</h3>
+			<img src="img1.jpg" alt="" width="220px">
+			<ul>
+				<li><a href="#">量子传输突破</a></li>
+				<li><a href="#">22222222</a></li>
+				<li><a href="#">33333333</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
