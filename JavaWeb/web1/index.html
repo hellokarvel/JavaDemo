@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{				
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				list-style: none;
+			}
+			.clearfix:before, .clearfix:after{
+				display: table;
+				content: "";
+			}
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}				
+			a{
+				color: #050505;	
+				text-decoration: none;
+			}
+			.navbar a:hover{
+				border-bottom: 2px solid #00a4ff;
+			}
+			body {
+				background-color: #f3f5f7;
+			}
+			.container {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			header {
+				height: 100px;
+				
+				overflow: hidden;  	/* 防止外边距合并 */
+			}
+			nav {
+				width: 1366px;
+				height: 42px;
+				
+				margin: 29px auto;
+			}
+			.logo{
+				float: left;
+			}
+			.navbar{
+				height: 42px;
+				float: left;
+				line-height: 42px;
+			}
+			.navbar li {
+				float:left;
+				margin-left: 22px;
+			}
+			.navbar li a {
+				padding:0 8px;
+				
+				display: block;
+			}
+			.search {
+				width: 410px;
+				height: 38px;
+				border: 1px solid #00a4ff;
+				float: right;
+			}
+			input{
+				border: 0;                /* 清除input边距 */
+				box-sizing: border-box;/* css3盒子 */
+			}
+			.search input[type=text] {
+				width: 360px;
+				height: 38px;
+				float: left;
+				padding-left: 10px;
+			}
+			.search input[type=submit] {
+				width: 50px;
+				height: 38px;
+				float: left;
+				background-color: ;
+				background: #00A4FF url(img/images/search_03.png) center center no-repeat;
+			}
+			.person a {
+				float: right;
+				line-height: 42px;
+				display: block;
+				margin-left: 20px;
+			
+			}
+			.person ima {
+				margin: 0 8px;
+			}
+			.banner {
+				height: 420px;
+				background-color: #1c036c;
+			}
+			.banner-in {
+				height: 420px;
+				background: url(img/images/banner_03.png) center;
+			}
+			.slidebar {
+				float: left;
+				width: 190px;
+				height: 420px;
+				background-color:rgba(0,0,0,0.3);/* 盒子背景半透明 */
+			}
+			.slidebar ul a {
+				font-size: 14px;
+				color: white;
+				
+				padding: 0 20px;
+				display:block;
+				/* height: 45px; */
+				line-height: 45px;
+			}
+			.slidebar a span {
+				float: right;
+				font-family: arial;
+				
+			}
+			.slidebar a:hover {
+				color: #00A4FF;
+			}
+			.timetable {
+				float: right;
+				width: 230px;
+				height: 300px;
+				background-color: white;
+				margin: 50px;
+			}
+			.timetable dt {
+				/* height: 50px; */
+				font-size: 20px;
+				color: white;
+				font-weight: 700;
+				letter-spacing: 2px;
+				background-color: #9bceea;
+				text-align: center;
+				line-height: 50px;
+				margin-bottom: 10px;
+			}
+			.timetable dd {
+				width: 190px;
+				height: 48px;
+				/* line-height: 58px; */
+				background-color: white;
+				margin:0 auto ;
+				border-bottom: 1px solid #eaeaea;
+				padding: 10px 0 0 10px;
+			}
+			.timetable h4 {
+				font-size: 14px;
+				color: #ababab;
+				font-weight: normal;
+			}
+			.timetable dd:last-child {
+				border: 0;
+			}
+			.timetable dd a {
+				height: 40px;
+				/* width: 200px; */
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 40px;
+				border: 1px solid #22b0ff;
+				
+			}
+			p:hover {
+				color: #00a4ff;
+			}
+			a:hover {
+				color: #00a4ff;
+			}
+			.recommend {
+				height: 60px;
+				background-color: white;
+				/* border: 1px solid black; */
+				margin-top: 18px;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.2);/* 盒子阴影 */
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 页面头部分 -->
+		<header >
+			<nav>
+				<div class="logo">
+					<img src="img/logo.png" >
+				</div>
+				<div class="navbar">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">职业规划</a></li>
+				</div>
+				<!-- 搜索框 -->
+				<div class="person">
+					<a href="#"><img src="img/images/touxiang_03.png" > pdd</a>
+					<a href="#">个人中心 <img src="img/images/ling_06.png" ></a>
+					
+				</div>
+				<div class="search">
+					<input type="text" placeholder="请输入关键字"/>
+					<!-- placehorder占位符  内容输入自动清除默认值 -->
+					<input type="submit" value="" />
+				</div>
+				<!-- 个人中心 -->
+
+			</nav>
+		</header>
+		<div class="banner">
+			<div class="banner-in container">
+				<!-- 左侧导航 -->
+				<div class="slidebar">
+					<ul>
+						<li><a href="#">1</a></li>
+						<li><a href="#">后端开发<span>></span></a></li>
+						<li><a href="#">移动开发<span>></span></a></li>
+						<li><a href="#">人工智能<span>></span></a></li>
+						<li><a href="#">商业预测<span>></span></a></li>
+						<li><a href="#">移动开发<span>></span></a></li>
+						<li><a href="#">移动开发<span>></span></a></li>
+						<li><a href="#">移动开发<span>></span></a></li>
+						<li><a href="#">移动开发<span>></span></a></li>
+					</ul>
+				
+				</div>
+				<dl class="timetable">
+					<dt >我的课程表</dt>
+					<dd>
+						<p style="font-size: 16px;">继续学习 程序语音设计</p>
+						<h4>正在学习-使用对象</h4>
+					</dd>
+					<dd><p style="font-size: 16px;">继续学习 程序语音设计</p>
+						<h4>正在学习-使用对象</h4></dd>
+					<dd><p style="font-size: 16px;">继续学习 程序语音设计</p>
+						<h4>正在学习-使用对象</h4></dd>
+					<dd>
+						<a href="#">全部课程</a>
+					</dd>
+				</dl>
+			</div>
+			
+			
+		</div>
+		<div class="recommend container">
+			
+		</div>
+	</body>
+</html>
