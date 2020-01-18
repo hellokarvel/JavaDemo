@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        .bg{
+            background-color: yellowgreen;
+        } 
+    </style>
+</head>
+<body>
+    <!-- <table>
+        <thead>
+            标题栏
+        </thead>
+        <tbody >
+            <tr>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <table>
+        <thead>
+            <th>商品</th>
+            <th>价格</th>
+            <th><input type="checkbox" id="j_cball"></th>
+        </thead>
+        <tbody id="j_tb">
+            <tr>
+                <td>iphone</td>
+                <td>8000</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>华为</td>
+                <td>6000</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        // var trs = document.querySelector('tbody').querySelectorAll('tr');
+        // console.log(trs);
+        
+        // for(var i = 0; i < trs.length; i++){
+        //     trs[i].onmouseover = function(){
+        //         this.className = 'bg';               
+        //     }
+        //     trs[i].onmouseout = function(){
+        //         this.className = '';               
+        //     }
+
+        // }
+        var j_cball = document.getElementById('j_cball');
+        var j_tbs = document.getElementById('j_tb').getElementsByTagName('input');
+        j_cball.onclick = function(){
+            console.log(this.checked);
+            for(var i = 0;i<j_tbs.length;i++){
+                j_tbs[i].checked = 'checked';
+            }
+        }
+    </script>
+</body>
+</html>
