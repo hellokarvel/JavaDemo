@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="box1">
+  <h2>{{message}}</h2>
+  <h2 v-once>{{message}}</h2>
+  <img src="" alt="">
+</div>
+
+<script src="vue.js"></script>
+<script>
+  const app = new Vue({
+    el:'#box1',
+    data:{
+      message:'hello'
+    }
+  })
+</script>
+</body>
+</html>

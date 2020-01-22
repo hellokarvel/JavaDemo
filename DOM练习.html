@@ -53,6 +53,7 @@
             </tr>
         </tbody>
     </table>
+    <div id="demo" index ='1'>demo内容</div>
     <script>
         // var trs = document.querySelector('tbody').querySelectorAll('tr');
         // console.log(trs);
@@ -69,11 +70,51 @@
         var j_cball = document.getElementById('j_cball');
         var j_tbs = document.getElementById('j_tb').getElementsByTagName('input');
         j_cball.onclick = function(){
-            console.log(this.checked);
+            // console.log(this.checked);
             for(var i = 0;i<j_tbs.length;i++){
                 j_tbs[i].checked = 'checked';
             }
+            if(!this.checked){
+                for(var i = 0;i<j_tbs.length;i++){
+                j_tbs[i].checked = false;
+            }
+            }
         }
+            for(var i = 0;i<j_tbs.length;i++){
+                
+                j_tbs[i].onclick =function(){
+                    var flag =true;
+                    for(var i = 0;i<j_tbs.length;i++){
+                        if(!j_tbs[i].checked){
+                            flag = false;
+                            break;
+                        }
+                    }
+                    j_cball.checked = flag;
+                }
+            }
+        var div = document.querySelector('div');
+        console.log(div.id);
+        // console.log(div.index);无法显示
+        console.log(div.getAttribute('id'));
+        console.log(div.getAttribute('index'));
+        var arr = [1,'卢本伟',5,7,9];
+        arr.forEach(function(value,index){
+                    console.log(index,value);
+                    // console.log(index);
+                    
+                    
+            })
+        var a = 99;            // 全局变量a
+        f();                   // f是函数，虽然定义在调用的后面，但是函数声明会提升到作用域的顶部。 
+        console.log(a);        // a=>99,  此时是全局变量的a
+        function f() {
+        console.log(a);      // 当前的a变量是下面变量a声明提升后，默认值undefined
+        // var a = 10;
+        console.log(a);      // a => 10
+        }    
+        
+              
     </script>
 </body>
 </html>
